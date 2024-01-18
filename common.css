@@ -1,0 +1,56 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MARGINE TOP DA 15*/
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+/*MARGINE TOP DA 30*/
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+/*MARGINE TOP DA 45*/
+.margin-top-45 {
+    margin-top: 45px;
+}
+
+/*MARGINE TOP DA 60*/
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+/*MARGINE TOP DA 75*/
+.margin-top-75 {
+    margin-top: 75px;
+}
+
+/*MARGINE BOTTOM DA 15*/
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+/*MARGINE BOTTOM DA 30*/
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+/*MARGINE BOTTOM DA 45*/
+.margin-bottom-45 {
+    margin-bottom: 45px;
+}
+
+/*MARGINE BOTTOM DA 60*/
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+
+/*MARGINE BOTTOM DA 75*/
+.margin-bottom-75 {
+    margin-bottom: 75px;
+}

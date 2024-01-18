@@ -1,0 +1,253 @@
+/*STILE ESERCIZIO 1*/
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+    transition: 2s;
+}
+
+/*STILE ESERCIZIO 2*/
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/*STILE ESERCIZIO 3*/
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/*STILE ESERCIZIO 4*/
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/*STILE ESERCIZIO 5*/
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-5-square:hover {
+    scale: 2;
+}
+
+.ex-5-square:active {
+    scale: 0.5;
+}
+
+/*STILE ESERCIZIO 6-7-8*/
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+    transition: 2s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover {
+    filter: sepia(100%) blur(5px);
+}
+
+.ex-8-img:hover {
+    border-radius: 10px;
+    filter: sepia(80%) blur(2px);
+}
+
+/*STILE ESERCIZIO 9*/
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(50%) sepia(50%);
+    border-radius: 10px;
+    transform: scale(1.60);
+}
+
+/*STILE ESERCIZIO 10*/
+.ex-10-icon {
+    font-size: 60px;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/*STILE ESERCIZIO 11*/
+.ex-11-icon {
+    font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    animation: spinlittle 2s linear;
+}
+
+@keyframes spinlittle {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/*STILE ESERCIZIO 12-13*/
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top 2s linear;
+}
+@keyframes move-top {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bottom 2s linear;
+}
+@keyframes move-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: move360 1s linear;
+}
+
+@keyframes move360 {
+    0% {
+        left: 10%;
+        top: -20px;
+    }
+    20% {
+        left: calc(100% - 40px);
+        top: -20px;
+    }
+    40% {
+        left: calc(100% - 40px);
+        top: 100%;
+    }
+    60% {
+        left: 0;
+        top: 100%;
+    }
+    80% {
+        left: -20px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -20px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: move360-2 1s linear;
+}
+
+@keyframes move360-2 {
+    0% {
+        bottom: -20px;
+        right: 10%;
+    }
+    20% {
+        right: calc(100% - 40px);
+        bottom: -20px;
+    }
+    40% {
+        right: calc(100% - 40px);
+        bottom: 100%;
+    }
+    60% {
+        right: 0;
+        bottom: 100%;
+    }
+    80% {
+        right: -20px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -20px;
+        right: 10%;
+    }
+}
